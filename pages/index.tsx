@@ -1,13 +1,9 @@
-
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Twitter, Send, ImagePlus, Gift, Star } from "lucide-react";
 import Image from "next/image";
 
 export default function LockOrClockSite() {
   return (
     <div className="bg-yellow-100 text-black min-h-screen font-sans">
-      {/* Header Section */}
       <div className="relative text-center py-10 px-4 border-b border-black">
         <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight">
           LOCK IN OR CLOCK IN
@@ -16,10 +12,8 @@ export default function LockOrClockSite() {
           Make your choice: generational wealth or eternal 9-to-5.
         </p>
         <div className="mt-6 flex justify-center gap-4">
-          <Button className="text-lg px-6 py-3 rounded-2xl">Buy Now</Button>
-          <Button variant="outline" className="text-lg px-6 py-3 rounded-2xl">
-            View Chart
-          </Button>
+          <button className="text-lg px-6 py-3 rounded-2xl bg-black text-yellow-100">Buy Now</button>
+          <button className="text-lg px-6 py-3 rounded-2xl border border-black">View Chart</button>
         </div>
         <div className="mt-8">
           <Image
@@ -32,7 +26,6 @@ export default function LockOrClockSite() {
         </div>
       </div>
 
-      {/* About the Coin */}
       <div className="max-w-4xl mx-auto py-20 px-6">
         <h2 className="text-4xl font-bold mb-4">About $LOCKORCLOCK</h2>
         <p className="text-lg leading-relaxed">
@@ -42,7 +35,6 @@ export default function LockOrClockSite() {
         </p>
       </div>
 
-      {/* Chart Embed */}
       <div className="bg-yellow-200 py-16 px-6 border-t border-b border-black">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">Live Chart</h2>
@@ -56,7 +48,6 @@ export default function LockOrClockSite() {
         </div>
       </div>
 
-      {/* Token Info */}
       <div className="bg-yellow-200 py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">Token Info</h2>
@@ -69,7 +60,6 @@ export default function LockOrClockSite() {
         </div>
       </div>
 
-      {/* Roadmap */}
       <div className="max-w-4xl mx-auto py-20 px-6">
         <h2 className="text-4xl font-bold mb-6">Roadmap</h2>
         <ul className="list-disc pl-6 space-y-4 text-lg">
@@ -80,7 +70,6 @@ export default function LockOrClockSite() {
         </ul>
       </div>
 
-      {/* Airdrop Claim Page */}
       <div className="bg-yellow-300 py-20 px-6 border-t border-b border-black">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6 flex justify-center items-center gap-2">
@@ -92,12 +81,11 @@ export default function LockOrClockSite() {
             className="px-4 py-3 w-full max-w-md border border-black rounded-xl text-black"
           />
           <div className="mt-4">
-            <Button className="text-lg px-6 py-3 rounded-xl">Claim Now</Button>
+            <button className="text-lg px-6 py-3 rounded-xl bg-black text-yellow-100">Claim Now</button>
           </div>
         </div>
       </div>
 
-      {/* Meme Gallery & Sticker Pack */}
       <div className="max-w-6xl mx-auto py-20 px-6">
         <h2 className="text-4xl font-bold mb-6 flex gap-2 items-center">
           <ImagePlus className="w-6 h-6" /> Meme Gallery & Sticker Pack
@@ -109,7 +97,6 @@ export default function LockOrClockSite() {
         </div>
       </div>
 
-      {/* Whitelist Form */}
       <div className="bg-yellow-100 py-16 px-6 border-t border-black">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4 flex justify-center items-center gap-2">
@@ -121,22 +108,21 @@ export default function LockOrClockSite() {
             className="px-4 py-3 w-full max-w-md border border-black rounded-xl text-black"
           />
           <div className="mt-4">
-            <Button className="text-lg px-6 py-3 rounded-xl">Submit</Button>
+            <button className="text-lg px-6 py-3 rounded-xl bg-black text-yellow-100">Submit</button>
           </div>
         </div>
       </div>
 
-      {/* Join Us */}
       <div className="bg-black text-yellow-100 py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Join the Movement</h2>
           <div className="flex justify-center gap-6">
-            <Button className="flex items-center gap-2 px-6 py-3 text-lg">
+            <button className="flex items-center gap-2 px-6 py-3 text-lg bg-yellow-100 text-black rounded-xl">
               <Twitter className="w-5 h-5" /> X / Twitter
-            </Button>
-            <Button className="flex items-center gap-2 px-6 py-3 text-lg">
+            </button>
+            <button className="flex items-center gap-2 px-6 py-3 text-lg bg-yellow-100 text-black rounded-xl">
               <Send className="w-5 h-5" /> Telegram
-            </Button>
+            </button>
           </div>
         </div>
       </div>
